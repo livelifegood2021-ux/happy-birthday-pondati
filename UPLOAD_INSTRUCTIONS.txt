@@ -1,0 +1,12 @@
+FIXED WEBSITE - IMPORTANT
+
+Upload ALL files and the entire assets folder to the ROOT of your GitHub repository. Do not upload only index.html or script.js.
+
+GitHub website files at root: index.html, style.css, script.js, cinematic.js
+And the assets folder containing every .webp photo and birthday_music.mp3.
+
+If pictures/music are missing, visit https://YOUR-USERNAME.github.io/happy-birthday-pondati/assets/birthday_music.mp3 to test the audio file. A 404 means it was not uploaded in the correct location.
+
+Tap Music: Off or Open Our Love Story to start audio. Browsers block music autoplay without a tap.
+
+After upload, wait for GitHub Pages to deploy and hard-refresh (Ctrl+Shift+R).

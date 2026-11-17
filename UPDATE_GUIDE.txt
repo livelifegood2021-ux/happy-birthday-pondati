@@ -1,0 +1,9 @@
+VISIBLE BUTTERFLY FIX
+
+1. Upload style.css and cinematic.js from this ZIP to the ROOT of your GitHub repository, replacing the previous files.
+2. Commit changes and wait for GitHub Pages to deploy.
+3. Hard refresh (Ctrl+Shift+R) or open in a private tab.
+4. Butterflies fly near the left and right edges, above page backgrounds but below the text and photos.
+5. If still invisible, check cinematic.js is accessible at your website URL /cinematic.js.
+
+This package contains all website assets as well.

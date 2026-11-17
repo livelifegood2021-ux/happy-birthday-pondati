@@ -19,3 +19,22 @@
 .scene-art img{height:auto!important;aspect-ratio:3/2;object-fit:contain!important;object-position:center;background:linear-gradient(135deg,#ffe6f4,#f9e9ff);max-height:none}
 .scene-art img:not([src*="framed_scene"]){height:min(62vh,550px)!important;aspect-ratio:auto;object-fit:contain!important}
 @media(max-width:700px){.scene-art img{width:100%;height:auto!important;max-height:none!important;aspect-ratio:3/2!important}.scene-art img:not([src*="framed_scene"]){height:auto!important;max-height:65vh!important;aspect-ratio:auto!important}}
+
+/* Background-only decorations: never cover words or photographs */
+.ambient,.ambient.cinematic-layer{z-index:0!important;opacity:.42!important;pointer-events:none!important}
+.hero,.intro,.scene,.ending,footer{isolation:isolate}
+.hero-content,.scroll-prompt,.intro>*,.scene-art,.scene-copy,.ending-inner{position:relative;z-index:2}
+.scene-art img,.scene-art img.ai-memory{object-fit:contain!important;object-position:center!important;background:linear-gradient(135deg,#ffe9f5,#f6eaff)!important}
+.hero-portrait img,.ending-photo img{object-fit:contain!important;background:#e8b6d5}
+.cinematic-butterfly{opacity:.55;filter:drop-shadow(0 3px 4px #9856b055)!important}
+.cinematic-drift{opacity:.3!important}
+@media(max-width:700px){.ambient,.ambient.cinematic-layer{opacity:.25!important}}
+
+/* FIX: Visible flying butterflies above section backgrounds, below story content. */
+.ambient,.ambient.cinematic-layer{position:fixed!important;inset:0!important;z-index:12!important;opacity:1!important;pointer-events:none!important;overflow:hidden!important}
+.hero,.intro,.scene,.ending,footer{isolation:auto!important}
+.hero-content,.scroll-prompt,.intro>*,.scene-art,.scene-copy,.ending-inner{position:relative;z-index:20!important}
+.topbar{z-index:40!important}
+.cinematic-butterfly{filter:drop-shadow(0 3px 5px #813e8c80)!important}
+.cinematic-drift{opacity:.42!important}
+@media(max-width:700px){.ambient,.ambient.cinematic-layer{opacity:1!important}}
